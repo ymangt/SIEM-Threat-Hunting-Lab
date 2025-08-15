@@ -6,7 +6,7 @@
 **Repository:** [ymangt/SIEM-Threat-Hunting-Lab](https://github.com/ymangt/SIEM-Threat-Hunting-Lab)  
 **Environment:** Controlled VMware NAT Lab  
 
-This report details a threat-hunting exercise conducted on a single-node Splunk Enterprise instance, focusing on detecting and analyzing three simulated threat behaviors: excessive failed SSH logins, rapid malware executions, and network scanning activity. All activities were performed within a lab environment on an Ubuntu VM (IP: 192.168.71.131), with timestamped evidence and actionable recommendations. The findings align with MITRE ATT&CK frameworks, demonstrating SOC-ready detection and response capabilities.
+This report details a threat-hunting exercise conducted on a single-node Splunk Enterprise instance, focusing on detecting and analyzing three simulated threat behaviors: excessive failed SSH logins, rapid malware executions, and network scanning activity. All activities were performed within a lab environment on an Ubuntu VM (IP: 192.168.x.x ), with timestamped evidence and actionable recommendations. The findings align with MITRE ATT&CK frameworks, demonstrating SOC-ready detection and response capabilities.
 
 ---
 
@@ -14,7 +14,7 @@ This report details a threat-hunting exercise conducted on a single-node Splunk 
 
 ### Infrastructure
 - **Host System:** Windows 11 running VMware Workstation Pro
-- **Virtual Machine:** Ubuntu 24.04 LTS, NAT network (192.168.71.131)
+- **Virtual Machine:** Ubuntu 24.04 LTS, NAT network (192.168.x.x )
 - **SIEM Platform:** Splunk Enterprise (Free Trial, single-node)
 - **Time Zone:** Eastern Daylight Time (EDT)
 
@@ -37,19 +37,17 @@ Detect bursts of failed SSH authentication attempts indicative of brute-force at
 #### Search Query
 ```spl
 index=main sourcetype=auth.log "Failed password"
-| bin _time span=1m
-| stats count min(_time) as first_seen max(_time) as last_seen values(src) as src_ip by host, _time
 ```
 
 #### Alert Configuration
-- **Trigger Condition:** Count > 5 events in a 1-minute window  
+- **Trigger Condition:** Count > 5 events
 - **Saved Search:** Excessive Failed Logins  
-- **Schedule:** Every 5 minutes  
+- **Schedule:** Every week 
 
 #### Findings
 - **Event Count:** 6+ failed login attempts  
 - **Time Window:** 12:42:55 AM – 12:43:28 AM EDT, August 14, 2025  
-- **Source IPs:** `192.168.71.133` (host via NAT)  
+- **Source IPs:** `192.168.x.x ` (host via NAT)  
 - **Pattern:** Rapid succession of invalid user attempts  
 
 #### Visual Evidence
@@ -80,15 +78,12 @@ Detect rapid, repeated execution of a script or binary that could indicate autom
 #### Search Query
 ```spl
 index=main sourcetype=malware-sim.sh "Malware executed"
-| bin _time span=1m
-| stats count values(host) as hosts by _time
-| where count > 3
 ```
 
 #### Alert Configuration
-- **Trigger Condition:** Count > 3 events in a 1-minute window  
+- **Trigger Condition:** Count > 3 events
 - **Saved Search:** Excessive Malware Executions  
-- **Schedule:** Every 5 minutes  
+- **Schedule:** Every week
 
 #### Findings
 - **Event Count:** 5 executions  
@@ -125,15 +120,12 @@ Detect port scanning activities indicative of reconnaissance efforts.
 #### Search Query
 ```spl
 index=main sourcetype=network_scan
-| rex "Nmap scan report for (?<dst_host>[^\s]+)"
-| rex "Not shown: (?<closed_ports>\d+) closed tcp ports"
-| table _time dst_host closed_ports
 ```
 
 #### Alert Configuration
 - **Trigger Condition:** Any hit (>0)
 - **Saved Search:** Network Scan Detection
-- **Schedule:** Daily at 00:00 (demo)
+- **Schedule:** Every week
 
 #### Findings
 - **Event Count:** 1 Nmap scan
@@ -192,7 +184,7 @@ index=main sourcetype=network_scan
 
 ### Failed SSH Logins
 ```bash
-for i in {1..8}; do ssh invalid@192.168.71.131 -p 22; done
+for i in {1..8}; do ssh invalid@192.168.x.x  -p 22; done
 ```
 
 ### Malware Execution Simulation
