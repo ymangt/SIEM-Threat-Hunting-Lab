@@ -23,8 +23,8 @@ Welcome to my **SIEM Threat Hunting Lab**, a hands-on project showcasing my cybe
   - **[Authentication Failures Hunt](screenshots/authentication-failures/excessive-failed-logins-hunt-screenshot.png):** SPL query results.
   - **[Malware Activity Hunt](screenshots/malware-activity/malware-hunt-screenshot.png):** Malware detection.
   - **[Network Scanning Hunt](screenshots/network-scanning/network-scan-hunt-screenshot.png):** Port scan analysis.
-  - **[Alert Configurations](screenshots/authentication-failures/excessive-failed-logins-alert-screenshot.png, screenshots/malware-activity/malware-alert-screenshot.png, screenshots/network-scanning/network-scan-alert-screenshot.png):** Proactive monitoring setups.
-  - **[Visualizations](screenshots/authentication-failures/excessive-failed-logins-visual-screenshot.png, screenshots/malware-activity/malware-visual-screenshot.png, screenshots/network-scanning/network-scan-visual-screenshot.png):** Timecharts and tables.
+  - **[Authentication Failures Alert Config](screenshots/authentication-failures/excessive-failed-logins-alert-screenshot.png)**, **[Malware Activity Alert Config](screenshots/malware-activity/malware-alert-screenshot.png)**, **[Network Scanning Alert Config](screenshots/network-scanning/network-scan-alert-screenshot.png):** Proactive monitoring setups.
+  - **[Authentication Failures Visualizations](screenshots/authentication-failures/excessive-failed-logins-visual-screenshot.png)**, **[Malware Activity Visualizations](screenshots/malware-activity/malware-visual-screenshot.png)**, **[Network Scanning Visualizations](screenshots/network-scanning/network-scan-visual-screenshot.png):** Line Graph.
 - **Detailed Report:** [Threat Hunting Analysis](reports/threat-hunting-report.md) - Comprehensive findings, MITRE ATT&CK mappings, and mitigation strategies.
 - **Raw Logs:** 
   - [Auth Log Sample](captures/auth-log-sample.txt)
@@ -51,11 +51,8 @@ Welcome to my **SIEM Threat Hunting Lab**, a hands-on project showcasing my cybe
 - **GitHub:** Version control and portfolio hosting.
 
 ## Contact
-- **LinkedIn:** [Youssef Mangt](https://www.linkedin.com/in/yourprofile)
-- **Email:** [youssef.mangt@example.com](mailto:youssef.mangt@example.com)
+- **LinkedIn:** [Youssef Elmanawy](https://www.linkedin.com/in/youssef-elmanawy/)
+- **Email:** [yhmanawy@gmail.com](mailto:yhmanawy@gmail.com)
 
-## Why This Matters to Employers
-This project reflects my hands-on experience with industry-standard tools like Splunk, a leader in SIEM solutions used by over 50% of Fortune 100 companies. The ability to simulate, detect, and mitigate threats in a controlled environment translates directly to real-world SOC operations. My focus on documentation and reproducibility ensures I can collaborate effectively and contribute immediately to your cybersecurity team.
-
-## Acknowledgments
-Inspired by practical learning at Queen’s University and guided by industry best practices from Splunk and MITRE ATT&CK frameworks.
+## Why This Project Is Relevant
+This lab demonstrates my proficiency with industry-standard SIEM tools, particularly Splunk, which is widely adopted across leading enterprises. By simulating and investigating real-world threats, I’ve gained practical skills that align closely with day-one responsibilities in SOC analyst and detection engineering roles. My emphasis on clear documentation and reproducible workflows also reflects the collaborative, detail-oriented mindset needed to succeed in a modern cybersecurity team.
