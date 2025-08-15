@@ -53,9 +53,9 @@ index=main sourcetype=auth.log "Failed password"
 - **Pattern:** Rapid succession of invalid user attempts  
 
 #### Visual Evidence
-- ![Alert](../screenshots/authentication-failures/excessive-failed-logins-alert-screenshot.png)  
-- ![Hunt Results](../screenshots/authentication-failures/excessive-failed-logins-hunt-screenshot.png)  
-- ![Timechart](../screenshots/authentication-failures/excessive-failed-logins-visual-screenshot.png)
+- [Alert](../screenshots/authentication-failures/excessive-failed-logins-alert-screenshot.png)  
+- [Hunt Results](../screenshots/authentication-failures/excessive-failed-logins-hunt-screenshot.png)  
+- [Timechart](../screenshots/authentication-failures/excessive-failed-logins-visual-screenshot.png)
 
 #### MITRE ATT&CK Mapping
 - **Tactic:** Credential Access  
