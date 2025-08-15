@@ -1,0 +1,11 @@
+- Purpose: Excerpt of `/var/log/network-scan.log` showing the Nmap scan output from your "Network Scanning" simulation.
+- Content: 5-10 lines capturing the port scan results.
+  Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-08-13 23:13 EDT
+  Nmap scan report for localhost (127.0.0.1)
+  Host is up (0.00024s latency).
+  Not shown: 998 closed tcp ports (conn-refused)
+  PORT   STATE SERVICE
+  22/tcp open  ssh
+- Creation:
+  - Run: head -n 10 /var/log/network-scan.log > captures/network-scan-log-sample.txt
+  - Verify: cat captures/network-scan-log-sample.txt (ensure Nmap output is present)
