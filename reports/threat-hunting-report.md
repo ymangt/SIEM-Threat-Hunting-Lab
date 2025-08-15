@@ -95,9 +95,9 @@ index=main sourcetype=malware-sim.sh "Malware executed"
 - **Time Window:** 8:06:11 PM – 8:06:15 PM EDT, August 13, 2025  
 
 #### Visual Evidence
-- ![Alert](screenshots/malware-activity/alert.png)  
-- ![Hunt Results](screenshots/malware-activity/hunt.png)  
-- ![Timechart](screenshots/malware-activity/visual.png)
+- [Alert](../screenshots/malware-activity/malware-alert-screenshot.png)  
+- [Hunt Results](../screenshots/malware-activity/malware-hunt-screenshot.png)  
+- [Timechart](../screenshots/malware-activity/malware-visual-screenshot.png)
 
 #### MITRE ATT&CK Mapping
 - **Tactic:** Execution  
@@ -142,9 +142,9 @@ index=main sourcetype=network_scan
 - **Summary:** 998 closed TCP ports
 
 #### Visual Evidence
-- ![Alert](screenshots/network-scanning/alert.png)  
-- ![Hunt Results](screenshots/network-scanning/hunt.png)  
-- ![Timechart](screenshots/network-scanning/visual.png)
+- [Alert](../screenshots/network-scanning/network-scan-alert-screenshot.png)  
+- [Hunt Results](../screenshots/network-scanning/network-scan-hunt-screenshot.png)  
+- [Timechart](../screenshots/network-scanning/network-scan-visual-screenshot.png)
 
 #### MITRE ATT&CK Mapping
 - **Tactic:** Discovery
@@ -230,12 +230,12 @@ sudo nmap -sS -p- localhost | sudo tee -a /var/log/network-scan.log
 
 
 ## Evidence Index
-- screenshots/authentication-failures/alert.png
-- screenshots/authentication-failures/hunt.png
-- screenshots/authentication-failures/visual.png
-- screenshots/malware-activity/alert.png
-- screenshots/malware-activity/hunt.png
-- screenshots/malware-activity/visual.png
-- screenshots/network-scanning/alert.png
-- screenshots/network-scanning/hunt.png
-- screenshots/network-scanning/visual.png
+- screenshots/authentication-failures/excessive-failed-logins-alert-screenshot.png
+- screenshots/authentication-failures/excessive-failed-logins-hunt-screenshot.png
+- screenshots/authentication-failures/excessive-failed-logins-visual-screenshot.png
+- screenshots/malware-activity/malware-alert-screenshot.png
+- screenshots/malware-activity/malware-hunt-screenshot.png
+- screenshots/malware-activity/malware-visual-screenshot.png
+- screenshots/network-scanning/network-scan-alert-screenshot.png
+- screenshots/network-scanning/network-scan-hunt-screenshot.png
+- screenshots/network-scanning/network-scan-visual-screenshot.png
