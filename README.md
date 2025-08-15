@@ -19,18 +19,18 @@ Welcome to my **SIEM Threat Hunting Lab**, a hands-on project showcasing my cybe
   - **Malware Activity:** 5 executions in a 5-second burst.
   - **Network Scanning:** 1 Nmap scan detecting 998 closed ports.
 - **Visual Evidence:**
-  - **[Setup Dashboard](screenshots/splunk-setup-screenshot.png):** Initial Splunk interface.
-  - **[Authentication Failures Hunt](screenshots/authentication-failures/hunt.png):** SPL query results.
-  - **[Malware Activity Hunt](screenshots/malware-activity/hunt.png):** Malware detection.
-  - **[Network Scanning Hunt](screenshots/network-scanning/hunt.png):** Port scan analysis.
-  - **[Alert Configurations](screenshots/authentication-failures/alert.png, screenshots/malware-activity/alert.png, screenshots/network-scanning/alert.png):** Proactive monitoring setups.
-  - **[Visualizations](screenshots/authentication-failures/visual.png, screenshots/malware-activity/visual.png, screenshots/network-scanning/visual.png):** Timecharts and tables.
+  - **[Setup Dashboard](screenshots/splunk-setup/splunk-setup-screenshot.png):** Initial Splunk interface.
+  - **[Authentication Failures Hunt](screenshots/authentication-failures/excessive-failed-logins-hunt-screenshot.png):** SPL query results.
+  - **[Malware Activity Hunt](screenshots/malware-activity/malware-hunt-screenshot.png):** Malware detection.
+  - **[Network Scanning Hunt](screenshots/network-scanning/network-scan-hunt-screenshot.png):** Port scan analysis.
+  - **[Alert Configurations](screenshots/authentication-failures/excessive-failed-logins-alert-screenshot.png, screenshots/malware-activity/malware-alert-screenshot.png, screenshots/network-scanning/network-scan-alert-screenshot.png):** Proactive monitoring setups.
+  - **[Visualizations](screenshots/authentication-failures/excessive-failed-logins-visual-screenshot.png, screenshots/malware-activity/malware-visual-screenshot.png, screenshots/network-scanning/network-scan-visual-screenshot.png):** Timecharts and tables.
 - **Detailed Report:** [Threat Hunting Analysis](reports/threat-hunting-report.md) - Comprehensive findings, MITRE ATT&CK mappings, and mitigation strategies.
 - **Raw Logs:** 
   - [Auth Log Sample](captures/auth-log-sample.txt)
   - [Malware Log Sample](captures/malware-log-sample.txt)
   - [Network Scan Log Sample](captures/network-scan-log-sample.txt)
-- **Setup Guide:** [Installation Steps](docs/setup-guide.txt) - Reproducible lab configuration.
+- **Setup Guide:** [Installation Steps](docs/setup-guide.md)
 
 ## Skills Demonstrated
 - **SIEM Configuration:** Splunk installation, data ingestion, and alert setup.
