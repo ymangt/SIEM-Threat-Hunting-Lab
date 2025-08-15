@@ -230,12 +230,12 @@ sudo nmap -sS -p- localhost | sudo tee -a /var/log/network-scan.log
 
 
 ## Evidence Index
-- screenshots/authentication-failures/excessive-failed-logins-alert-screenshot.png
-- screenshots/authentication-failures/excessive-failed-logins-hunt-screenshot.png
-- screenshots/authentication-failures/excessive-failed-logins-visual-screenshot.png
-- screenshots/malware-activity/malware-alert-screenshot.png
-- screenshots/malware-activity/malware-hunt-screenshot.png
-- screenshots/malware-activity/malware-visual-screenshot.png
-- screenshots/network-scanning/network-scan-alert-screenshot.png
-- screenshots/network-scanning/network-scan-hunt-screenshot.png
-- screenshots/network-scanning/network-scan-visual-screenshot.png
+- [screenshots/authentication-failures/excessive-failed-logins-alert-screenshot.png](../screenshots/authentication-failures/excessive-failed-logins-alert-screenshot.png)
+- [screenshots/authentication-failures/excessive-failed-logins-hunt-screenshot.png](../screenshots/authentication-failures/excessive-failed-logins-hunt-screenshot.png)
+- [screenshots/authentication-failures/excessive-failed-logins-visual-screenshot.png](../screenshots/authentication-failures/excessive-failed-logins-visual-screenshot.png)
+- [screenshots/malware-activity/malware-alert-screenshot.png](../screenshots/malware-activity/malware-alert-screenshot.png)
+- [screenshots/malware-activity/malware-hunt-screenshot.png](../screenshots/malware-activity/malware-hunt-screenshot.png)
+- [screenshots/malware-activity/malware-visual-screenshot.png](../screenshots/malware-activity/malware-visual-screenshot.png)
+- [screenshots/network-scanning/network-scan-alert-screenshot.png](../screenshots/network-scanning/network-scan-alert-screenshot.png)
+- [screenshots/network-scanning/network-scan-hunt-screenshot.png](../screenshots/network-scanning/network-scan-hunt-screenshot.png)
+- [screenshots/network-scanning/network-scan-visual-screenshot.png](../screenshots/network-scanning/network-scan-visual-screenshot.png)
