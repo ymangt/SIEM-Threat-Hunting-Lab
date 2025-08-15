@@ -204,3 +204,38 @@ EOF
 sudo chmod +x /usr/local/bin/malware-sim.sh
 for i in {1..5}; do /usr/local/bin/malware-sim.sh; sleep 1; done
 ```
+
+### Network Scan
+```bash
+# On the VM
+sudo nmap -sS -p- localhost | sudo tee -a /var/log/network-scan.log
+```
+
+## Appendix B: Alert Metadata
+
+#### Excessive Failed Logins
+  - Schedule: Every 5 minutes
+  - Condition: Count > 5 per minute
+  - Action: Add to Triggered Alerts
+
+#### Excessive Malware Executions
+  - Schedule: Every 5 minutes
+  - Condition: Count > 3 per minute
+  - Action: Add to Triggered Alerts
+
+#### Network Scan Detection
+  - Schedule: Daily at 00:00 (demo)
+  - Condition: Results > 0
+  - Action: Add to Triggered Alerts
+
+
+## Evidence Index
+- screenshots/authentication-failures/alert.png
+- screenshots/authentication-failures/hunt.png
+- screenshots/authentication-failures/visual.png
+- screenshots/malware-activity/alert.png
+- screenshots/malware-activity/hunt.png
+- screenshots/malware-activity/visual.png
+- screenshots/network-scanning/alert.png
+- screenshots/network-scanning/hunt.png
+- screenshots/network-scanning/visual.png
