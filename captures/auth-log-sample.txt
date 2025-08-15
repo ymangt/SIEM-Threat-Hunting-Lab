@@ -1,0 +1,9 @@
+- Purpose: Excerpt of `/var/log/auth.log` showing failed login attempts from your "Authentication Failures" simulation.
+- Content: 20-50 lines capturing recent "Failed password" events.
+  2025-08-13T20:13:22.241726-04:00 youssef-VMware-Virtual-Platform sshd[48010]: Failed password for invalid user labuser from 127.0.0.1 port 37762 ssh2
+  2025-08-13T19:58:03.587415-04:00 youssef-VMware-Virtual-Platform sshd[45844]: Failed password for invalid user invalid from 192.168.71.1 port 50425 ssh2
+  2025-08-14T00:35:12.123456-04:00 youssef-VMware-Virtual-Platform sshd[60000]: Failed password for invalid user invalid from 127.0.0.1 port 40000 ssh2
+  [Additional lines from recent simulations, up to 50]
+- Creation:
+  - Run: tail -n 50 /var/log/auth.log > captures/auth-log-sample.txt
+  - Verify: cat captures/auth-log-sample.txt (ensure "Failed password" lines are present)
