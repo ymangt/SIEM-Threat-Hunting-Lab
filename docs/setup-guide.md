@@ -5,12 +5,12 @@ This guide outlines the setup of a Splunk-based SIEM lab on Ubuntu 24.04 LTS for
 
 ## VM Configuration
 **Host:** Windows 11, VMware Workstation Pro  
-**VM Specs:** 8 GB RAM, 50 GB disk, NAT network (192.168.71.131)
+**VM Specs:** 8 GB RAM, 50 GB disk, NAT network (192.168.x.x )
 
 ### Installation Steps:
 1. Download Ubuntu 24.04 LTS ISO from ubuntu.com.  
 2. Create VM in VMware: 2 CPUs, 8 GB RAM, 50 GB disk, NAT network.  
-3. Install Ubuntu with minimal setup, set hostname to `siem-lab`, username `youssef`, password `securepass`.  
+3. Install Ubuntu with minimal setup, set hostname to `siem-lab`.  
 4. Update system: ```sudo apt update && sudo apt upgrade -y```
 
 
@@ -19,7 +19,7 @@ This guide outlines the setup of a Splunk-based SIEM lab on Ubuntu 24.04 LTS for
 2. Install Splunk: ```sudo dpkg -i splunk-9.3.0.deb```
 3. Start Splunk with license acceptance:```/opt/splunk/bin/splunk start --accept-license```
 4. Set admin password (e.g., `SplunkPass123!`) and enable boot start:```/opt/splunk/bin/splunk enable boot-start```
-5. Verify Splunk is running by accessing: [http://192.168.71.131:8000](http://192.168.71.131:8000)
+5. Verify Splunk is running by accessing: [http://192.168.x.x ](http://192.168.x.x )
 
 ## Data Inputs Configuration
 1. Splunk > Settings > Data Inputs > Files & Directories > Add New  
