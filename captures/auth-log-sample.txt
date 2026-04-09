@@ -1,9 +1,15 @@
-- Purpose: Excerpt of `/var/log/auth.log` showing failed login attempts from "Authentication Failures" simulation.
-- Content: 20-50 lines capturing recent "Failed password" events.
-  2025-08-13T20:13:22.241726-04:00 youssef-VMware-Virtual-Platform sshd[48010]: Failed password for invalid user labuser from 127.0.0.1 port 37762 ssh2
-  2025-08-13T19:58:03.587415-04:00 youssef-VMware-Virtual-Platform sshd[45844]: Failed password for invalid user invalid from 192.168.71.1 port 50425 ssh2
-  2025-08-14T00:35:12.123456-04:00 youssef-VMware-Virtual-Platform sshd[60000]: Failed password for invalid user invalid from 127.0.0.1 port 40000 ssh2
-  [Additional lines from recent simulations, up to 50]
-- Creation:
-  - Run: tail -n 50 /var/log/auth.log > captures/auth-log-sample.txt
-  - Verify: cat captures/auth-log-sample.txt (ensured "Failed password" lines are present)
+2025-08-14T00:42:55.112304-04:00 siem-lab sshd[12041]: Failed password for invalid user admin from 192.168.71.1 port 49812 ssh2
+2025-08-14T00:42:57.334521-04:00 siem-lab sshd[12041]: Failed password for invalid user admin from 192.168.71.1 port 49812 ssh2
+2025-08-14T00:42:59.556738-04:00 siem-lab sshd[12043]: Failed password for invalid user root from 192.168.71.1 port 49814 ssh2
+2025-08-14T00:43:02.778945-04:00 siem-lab sshd[12043]: Failed password for invalid user root from 192.168.71.1 port 49814 ssh2
+2025-08-14T00:43:05.991162-04:00 siem-lab sshd[12045]: Failed password for invalid user test from 192.168.71.1 port 49816 ssh2
+2025-08-14T00:43:08.213379-04:00 siem-lab sshd[12045]: Failed password for invalid user test from 192.168.71.1 port 49816 ssh2
+2025-08-14T00:43:11.435596-04:00 siem-lab sshd[12047]: Failed password for invalid user labuser from 192.168.71.1 port 49818 ssh2
+2025-08-14T00:43:14.657813-04:00 siem-lab sshd[12047]: Failed password for invalid user labuser from 192.168.71.1 port 49818 ssh2
+2025-08-14T00:43:17.880030-04:00 siem-lab sshd[12049]: Failed password for invalid user invalid from 192.168.71.1 port 49820 ssh2
+2025-08-14T00:43:20.102247-04:00 siem-lab sshd[12049]: Failed password for invalid user invalid from 192.168.71.1 port 49820 ssh2
+2025-08-14T00:43:23.324464-04:00 siem-lab sshd[12051]: Failed password for invalid user guest from 192.168.71.1 port 49822 ssh2
+2025-08-14T00:43:25.546681-04:00 siem-lab sshd[12051]: Failed password for invalid user guest from 192.168.71.1 port 49822 ssh2
+2025-08-14T00:43:28.768898-04:00 siem-lab sshd[12053]: Failed password for invalid user operator from 192.168.71.1 port 49824 ssh2
+2025-08-13T20:13:22.241726-04:00 siem-lab sshd[48010]: Failed password for invalid user labuser from 127.0.0.1 port 37762 ssh2
+2025-08-13T19:58:03.587415-04:00 siem-lab sshd[45844]: Failed password for invalid user invalid from 192.168.71.1 port 50425 ssh2

@@ -1,0 +1,15 @@
+`-- Detection: Network Scanning (Reconnaissance)`
+`-- MITRE ATT&CK: T1046 - Network Service Discovery (Discovery)`
+`-- Description: Detects port scanning activity (e.g., Nmap) that may indicate`
+`--   reconnaissance by an attacker mapping the network. Any scan event is`
+`--   considered suspicious in a controlled environment and triggers an alert.`
+`-- Alert Threshold: Any match (> 0 results)`
+`-- Schedule: Daily`
+`-- Data Source: /var/log/network-scan.log (sourcetype=network_scan)`
+
+index=main sourcetype=network_scan
+| rex field=_raw "Nmap scan report for (?<target_host>\S+)"
+| rex field=_raw "(?<closed_ports>\d+) closed"
+| rex field=_raw "scanned in (?<scan_duration>\S+ \S+)"
+| stats count AS scan_events values(target_host) AS targets values(closed_ports) AS closed_port_count BY host
+| table host scan_events targets closed_port_count
